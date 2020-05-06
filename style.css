@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.6em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+    margin: 0;
+}
+
+.logo {
+    margin: 60px 10px 80px 0px;
+    width: 140px;
+}
+
+.container {
+    display: flex;
+    background-image: url('images/bg-pattern-desktop.svg');
+    min-height: 100vh;
+}
+
+h1 {
+    color: hsl(0, 6%, 24%);
+    font-weight: 300;
+    font-size: 3.4em;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 70px;
+    margin: 0;
+}
+
+h1 span{
+    color: hsl(0, 36%, 70%);
+}
+
+p {
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.left {
+    width: 60%;
+    padding: 0 180px;
+}
+
+.right {
+    width: 40%;
+}
+
+.bg-hero {
+    background-image: url('images/hero-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+form {
+    position: relative;
+}
+
+input {
+    background-color: transparent;
+    border-color: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    padding: 15px 15px 15px 25px;
+    width: 100%;
+    font-size: 15px;
+    height: 50px;
+}
+
+button {
+    background-image: linear-gradient( 135deg,
+     hsl(0, 80%, 86%),
+     hsl(0, 74%, 74%)
+    );
+    box-shadow: 2px 3px 10px hsl(0, 6%, 24%, 0.3);
+    padding: 15px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 110px;
+    transform: translateY(50%);
+}
+
+form.error .error-icon {
+    display: block;
+}
+
+small {
+    display: none;
+    color: hsl(0, 93%, 68%);
+    display: none;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+form.error small {
+    display: block;
+}
+
+form.error input {
+    border: 1px solid hsl(0, 93%, 68%);
+}
+
+button:hover {
+    background-image: linear-gradient( 135deg,
+     hsl(0, 0%, 100%),
+     hsl(0, 74%, 74%)
+    );
+}
+
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 300, 400, 600
+
+
